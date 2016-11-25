@@ -143,7 +143,6 @@ void SongList::saveSong(const char fileName[])
 void SongList::remove(int idx)
 {
 	int index = 0;
-	char name[128];
 	Node* curr;
 
 	if (idx == 0)
