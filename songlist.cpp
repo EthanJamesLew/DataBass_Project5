@@ -155,7 +155,10 @@ void SongList::remove(int idx)
 	for (curr = head; curr; curr = curr->next)
 	{
 		if (index == idx - 1)
+		{
+			delete curr->next;
 			curr->next = curr->next->next;
+		}
 		index++;
 	}
 }
